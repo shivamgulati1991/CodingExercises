@@ -1,5 +1,9 @@
 package dataStructures;
-
+/*
+ * Get the min value of stack with continuous push and pop
+ * Max implementation similar but not implemented
+ * Using Stack package of Java
+ */
 import java.util.Stack;
 
 public class MinMaxStack {
