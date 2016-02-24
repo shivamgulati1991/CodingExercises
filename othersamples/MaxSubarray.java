@@ -3,11 +3,11 @@ package othersamples;
 public class MaxSubarray {
 
 	static int MaxSum(int[] input){
-		int newsum=input[0];
+		int newSum=input[0];
 		int max=input[0];
 		for(int i=1;i<input.length;i++){
-			newsum=Math.max(newsum+input[i], newsum);
-			max=Math.max(max, newsum);
+			newSum=Math.max(newSum+input[i], newSum);
+			max=Math.max(max, newSum);
 		}
 		return max;
 		}
