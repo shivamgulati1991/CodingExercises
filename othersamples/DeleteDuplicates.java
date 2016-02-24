@@ -1,3 +1,4 @@
+package othersamples;
 import java.util.ArrayList;
 
 public class DeleteDuplicates {
