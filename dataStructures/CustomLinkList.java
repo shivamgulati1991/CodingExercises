@@ -73,6 +73,28 @@ public class CustomLinkList {
 		node=node.next;
 		}
 	}
+	
+	public void mergeLists(Node a,Node b){
+		Node c=new Node(0);
+		Node res=c;
+		while(a!=null && b!=null){
+			if(a.data<=b.data){
+				res.next=a;
+				a=a.next;
+			}
+			else {
+				res.next=b;
+				b=b.next;
+			}
+			res=res.next;
+		}
+		if(a.next!=null){
+			res.next=a;
+		}
+		if(b.next!=null){
+			res.next=b;
+		}
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		CustomLinkList c=new CustomLinkList();
@@ -81,9 +103,10 @@ public class CustomLinkList {
 		c.insertLast(3);
 		System.out.println("list: ");
 		c.printList();
-		c.deleteAny(5);
-		System.out.println("list: ");
-		c.printList();
+		CustomLinkList c1=new CustomLinkList();
+		c1.insertLast(7);
+		c1.insertLast(8);
+
 		
 	}
 
