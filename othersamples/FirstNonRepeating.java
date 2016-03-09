@@ -1,5 +1,8 @@
 package othersamples;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class FirstNonRepeating {
@@ -16,13 +19,15 @@ public class FirstNonRepeating {
 				map.put(c, 1);
 			}
 		}
-		
+
 		for(int i=0;i<input.length();i++){
 			c=input.charAt(i);
 			if(map.get(c)==1){
+				
 				return c;
 			}
 		}
+		
 		return '\0';
 	}
 	public static void main(String[] args){

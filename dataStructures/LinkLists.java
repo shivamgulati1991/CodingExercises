@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class LinkLists {
 	LinkedList<Integer> l = new LinkedList<Integer>();
-	void deleteList(int value){
+	void deleteListByValue(int value){
 		int i=0;
 		while(!l.isEmpty()){
 			if(l.get(i)==value){
@@ -14,6 +14,9 @@ public class LinkLists {
 			i++;
 		}
 	}
+	void deleteListByIndex(int index){
+		l.remove(index);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LinkLists ll=new LinkLists();
@@ -22,7 +25,7 @@ public class LinkLists {
 		ll.l.add(4);
 		ll.l.add(5);
 		System.out.println(ll.l);
-		ll.deleteList(4);
+		ll.deleteListByIndex(0);
 		System.out.println(ll.l);
 	}
 
